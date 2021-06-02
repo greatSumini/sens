@@ -1,0 +1,16 @@
+.git
+.github
+.vscode
+coverage
+node_modules
+!node_modules/axios
+lib
+tests
+
+yarn.lock
+yarn-error.log
+package-lock.json
+
+*eslint*
+*prettier*
+CHANGELOG.md
