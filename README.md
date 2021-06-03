@@ -5,20 +5,20 @@
 <p align="center">Naver SENS Inicis client for <a href="https://nodejs.org/" target="_blank">Node.js</a></p>
 
 <p align="center">
-    <a href="https://www.npmjs.com/package/@sumini/sens" target="_blank">
-        <img src="https://img.shields.io/npm/v/@sumini/sens.svg" alt="NPM Version" />
+    <a href="https://www.npmjs.com/package/@pickk/sens" target="_blank">
+        <img src="https://img.shields.io/npm/v/@pickk/sens.svg" alt="NPM Version" />
     </a>
-    <a href="https://github.com/greatSumini/sens/blob/master/LICENSE" target="_blank">
-        <img src="https://img.shields.io/npm/l/@sumini/sens.svg" alt="Package License" />
+    <a href="https://github.com/DEV-MUGLES/sens/blob/master/LICENSE" target="_blank">
+        <img src="https://img.shields.io/npm/l/@pickk/sens.svg" alt="Package License" />
     </a>
-    <a href="https://github.com/greatSumini/sens/actions/workflows/ci.yml">
-        <img src="https://github.com/greatSumini/sens/workflows/CI/badge.svg" />
+    <a href="https://github.com/DEV-MUGLES/sens/actions/workflows/ci.yml">
+        <img src="https://github.com/DEV-MUGLES/sens/workflows/CI/badge.svg" />
     </a>
-    <a href="https://www.npmjs.com/package/@sumini/sens" target="_blank">
-        <img src="https://img.shields.io/npm/dm/@sumini/sens.svg" alt="NPM Downloads" />
+    <a href="https://www.npmjs.com/package/@pickk/sens" target="_blank">
+        <img src="https://img.shields.io/npm/dm/@pickk/sens.svg" alt="NPM Downloads" />
     </a>
-    <a href="https://github.com/greatSumini/sens" target="_blank">
-        <img src="https://img.shields.io/github/stars/greatSumini/sens?style=social">
+    <a href="https://github.com/DEV-MUGLES/sens" target="_blank">
+        <img src="https://img.shields.io/github/stars/DEV-MUGLES/sens?style=social">
     </a>
 </p>
 
@@ -32,9 +32,9 @@ NCP SENS의 개발 가이드는 [여기](https://guide.ncloud-docs.com/docs/ko/s
 ## Installation
 
 ```shell
-$ npm install --save @sumini/sens
+$ npm install --save @pickk/sens
 # or
-$ yarn add @sumini/sens
+$ yarn add @pickk/sens
 ```
 
 ## Features
@@ -46,7 +46,7 @@ not implemented yet
 not implemented yet
 
 ```typescript
-import Sens from '@sumini/sens';
+import Sens from '@pickk/sens';
 
 const sens = new Sens({
   phoneNumber: '01012345678',

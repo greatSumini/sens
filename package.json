@@ -1,12 +1,12 @@
 {
-  "name": "@sumini/sens",
+  "name": "@pickk/sens",
   "version": "0.0.0",
-  "description": "Naver SENS Inicis client for nodejs",
+  "description": "NCP SENS Inicis client for nodejs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/greatSumini/sens.git"
+    "url": "git+https://github.com/DEV-MUGLES/sens.git"
   },
   "keywords": [
     "sens",
@@ -14,12 +14,12 @@
     "nodejs",
     "kakaotalk"
   ],
-  "author": "greatSumini <greatSumini@gmail.com> (https://sumini.dev)",
+  "author": "DEV-MUGLES",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/greatSumini/sens/issues"
+    "url": "https://github.com/DEV-MUGLES/sens/issues"
   },
-  "homepage": "https://github.com/greatSumini/sens#readme",
+  "homepage": "https://github.com/DEV-MUGLES/sens#readme",
   "scripts": {
     "build": "rimraf -rf dist && tsc -p tsconfig.json",
     "format": "prettier --write **/*.{ts,json} --ignore-path ./.prettierignore",
