@@ -8,24 +8,29 @@
     <a href="https://www.npmjs.com/package/@pickk/sens" target="_blank">
         <img src="https://img.shields.io/npm/v/@pickk/sens.svg" alt="NPM Version" />
     </a>
-    <a href="https://github.com/DEV-MUGLES/sens/blob/master/LICENSE" target="_blank">
-        <img src="https://img.shields.io/npm/l/@pickk/sens.svg" alt="Package License" />
-    </a>
-    <a href="https://github.com/DEV-MUGLES/sens/actions/workflows/ci.yml">
-        <img src="https://github.com/DEV-MUGLES/sens/workflows/CI/badge.svg" />
-    </a>
     <a href="https://www.npmjs.com/package/@pickk/sens" target="_blank">
-        <img src="https://img.shields.io/npm/dm/@pickk/sens.svg" alt="NPM Downloads" />
+        <img src="https://img.shields.io/bundlephobia/minzip/@pickk/sens" />
     </a>
-    <a href="https://github.com/DEV-MUGLES/sens" target="_blank">
-        <img src="https://img.shields.io/github/stars/DEV-MUGLES/sens?style=social">
-    </a>
+<a href="https://github.com/DEV-MUGLES/sens/blob/master/LICENSE" target="_blank">
+<img src="https://img.shields.io/npm/l/@pickk/sens.svg" alt="Package License" />
+</a>
+<a href="https://github.com/DEV-MUGLES/sens/actions/workflows/ci.yml">
+<img src="https://github.com/DEV-MUGLES/sens/workflows/CI/badge.svg" />
+</a>
+<a href="https://www.npmjs.com/package/@pickk/sens" target="_blank">
+<img src="https://img.shields.io/npm/dm/@pickk/sens.svg" alt="NPM Downloads" />
+</a>
+<a href="https://github.com/DEV-MUGLES/sens" target="_blank">
+<img src="https://img.shields.io/github/stars/DEV-MUGLES/sens?style=social">
+</a>
+
 </p>
 
 이 모듈은 Naver Cloud Platform에서 제공하는 Simple & Easy Notification Service(SENS) API를 [Node.js®](https://nodejs.org/)로 구현한 클라이언트입니다.<br>
 NCP SENS의 개발 가이드는 [여기](https://guide.ncloud-docs.com/docs/ko/sens-sens-1-1)를 참고하시기 바랍니다.<br>
 
 - 💙 Typescript support
+- 📦 5kb mini library
 - 👫 All browsers supported
 - 🏃 Currently maintaining
 
