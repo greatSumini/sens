@@ -50,6 +50,8 @@ $ yarn add @pickk/sens
 
 - SMS
   1. send
+- Alimtalk
+  1. send
 
 ## Usage
 
