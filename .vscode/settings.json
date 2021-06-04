@@ -1,6 +1,3 @@
 {
-  "conventionalCommits.scopes": [
-    "sms",
-    "alimtalk"
-  ]
+  "conventionalCommits.scopes": ["sms", "alimtalk"]
 }
