@@ -1,2 +1,2 @@
-export * from './sens';
-export { Sens as default } from './sens';
+export * from './clients';
+export { SensClient as default } from './clients/sens.client';
