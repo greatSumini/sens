@@ -25,6 +25,10 @@
 이 모듈은 Naver Cloud Platform에서 제공하는 Simple & Easy Notification Service(SENS) API를 [Node.js®](https://nodejs.org/)로 구현한 클라이언트입니다.<br>
 NCP SENS의 개발 가이드는 [여기](https://guide.ncloud-docs.com/docs/ko/sens-sens-1-1)를 참고하시기 바랍니다.<br>
 
+- 💙 Typescript support
+- 👫 All browsers supported
+- 🏃 Currently maintaining
+
 ## Requirements
 
 - [nodejs](https://github.com/nodejs/node) >= 12
@@ -39,20 +43,24 @@ $ yarn add @pickk/sens
 
 ## Features
 
-not implemented yet
+- SMS
+  1. send
 
 ## Usage
 
-not implemented yet
-
 ```typescript
-import Sens from '@pickk/sens';
+import { SmsClient } from '@pickk/sens';
 
-const sens = new Sens({
-  phoneNumber: '01012345678',
-  serviceId: 'serviceId',
-  secretKey: 'secretKey',
-  accessKey: 'accessKey',
+const smsClient = new SmsClient({
+  accessKey: 'your-access-key',
+  smsServiceId: 'your-sms-service-id',
+  smsSecretKey: 'your-sms-secret-key',
+  callingNumber: 'your-calling-number',
+});
+
+await smsClient.send({
+  to: ['01012341234', '01043214321'],
+  content: 'Hello Sens!',
 });
 ```
 
