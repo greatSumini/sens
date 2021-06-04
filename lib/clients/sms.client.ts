@@ -17,17 +17,6 @@ export class SmsClient extends SensClient {
     this.baseUrl += `/sms/v2/services/${input.smsServiceId}`;
   }
 
-  /**
-   *
-   * SMS를 보내는 함수
-   *
-   * @param recivers 수신 번호 배열
-   * @param content 전달할 내용
-   * @param countryCode 국가 코드 (default 82)
-   *
-   * @returns Promise with success(boolean), msg(string), status(number)
-   *
-   */
   public async send({
     to,
     content,
