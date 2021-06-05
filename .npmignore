@@ -16,3 +16,5 @@ package-lock.json
 CHANGELOG.md
 
 .env*
+
+*.map
