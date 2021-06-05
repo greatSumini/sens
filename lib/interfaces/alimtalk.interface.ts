@@ -89,7 +89,7 @@ export type AlimtalkMessage = {
 
   /** SMS Failover 사용 여부. Failover가 설정된 카카오톡 채널에서만 사용 가능
     - @default 카카오톡 채널의 Failover 설정 여부를 따름 */
-  useSmsFailover: boolean;
+  useSmsFailover?: boolean;
 
   failover?: AlimtalkFailOver;
 };
@@ -148,7 +148,7 @@ export type AlimtalkMessageRequest = Pick<
         schemeAndroid?: string;
       }>;
 
-      failoverConfig: Pick<SmsMessageRequest, 'from' | 'type'> & {
+      failoverConfig?: Pick<SmsMessageRequest, 'from' | 'type'> & {
         /** 메시지 제목. (정의하지 않으면 기본 메시지 제목을 사용) */
         subject?: string;
 
