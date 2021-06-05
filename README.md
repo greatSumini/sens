@@ -2,7 +2,7 @@
   <a href="https://www.ncloud.com/product/applicationService/sens" target="blank"><img src="https://ssl.pstatic.net/static/ncp/img/ko/msg_logo_thumb.jpg" width="240" alt="ncloud Logo" /></a>
 </p>
 
-<p align="center">Naver SENS Inicis client for <a href="https://nodejs.org/" target="_blank">Node.js</a></p>
+<p align="center">NCP SENS client for <a href="https://nodejs.org/" target="_blank">Node.js</a></p>
 
 <p align="center">
     <a href="https://www.npmjs.com/package/@pickk/sens" target="_blank">
@@ -87,7 +87,7 @@ await smsClient.send({
 
 ## License
 
-This Package is [MIT licensed](https://github.com/greatSumini/inicis/blob/master/LICENSE).
+This Package is [MIT licensed](https://github.com/DEV-MUGLES/sens/blob/master/LICENSE).
 
 ## References
 
