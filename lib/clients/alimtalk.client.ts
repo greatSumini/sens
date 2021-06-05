@@ -23,10 +23,14 @@ export class AlimtalkClient extends SensClient {
   public async send({
     templateCode,
     messages,
-  }: Pick<
+  }: Omit<
     AlimtalkMessageRequest,
-    'templateCode' | 'messages'
+    'plusFriendId'
   >): Promise<AlimtalkMessageResponse> {
+    if (messages.length === 0) {
+      throw new Error('1개 이상의 message를 입력해주세요.');
+    }
+
     const { plusFriendId } = this.options;
 
     const method = 'POST';
