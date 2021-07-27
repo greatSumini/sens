@@ -7,14 +7,15 @@ import {
   SmsOptions,
   SmsSendParams,
 } from '../interfaces/';
-import { SensClient } from './sens.client';
 
-export class SmsClient extends SensClient {
-  protected readonly options: SmsOptions;
-  constructor(input: Omit<SmsOptions, 'secretKey'>) {
-    super({ ...input, secretKey: input.smsSecretKey });
+import { BaseSensClient } from './base.client';
 
-    this.baseUrl += `/sms/v2/services/${input.smsServiceId}`;
+export class SmsClient extends BaseSensClient {
+  constructor(protected readonly options: SmsOptions) {
+    super();
+    options.secretKey = options.smsSecretKey;
+
+    this.baseUrl += `/sms/v2/services/${options.smsServiceId}`;
   }
 
   public async send({
@@ -27,7 +28,7 @@ export class SmsClient extends SensClient {
     const method = 'POST';
     const url = this.baseUrl + '/messages';
 
-    const headers = this.getHeaders(method, new URL(url).pathname);
+    const headers = this.createHeaders(method, new URL(url).pathname);
 
     const data: SmsMessageRequest = {
       type: 'SMS',

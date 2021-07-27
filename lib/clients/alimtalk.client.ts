@@ -6,12 +6,12 @@ import {
   AlimtalkMessageResponse,
   AlimtalkOptions,
 } from '../interfaces/';
-import { SensClient } from './sens.client';
 
-export class AlimtalkClient extends SensClient {
+import { BaseSensClient } from './base.client';
+
+export class AlimtalkClient extends BaseSensClient {
   constructor(protected readonly options: AlimtalkOptions) {
-    super(options);
-
+    super();
     this.baseUrl += `/alimtalk/v2/services/${options.alimtalkServiceId}`;
   }
 
@@ -36,7 +36,7 @@ export class AlimtalkClient extends SensClient {
     const method = 'POST';
     const url = this.baseUrl + '/messages';
 
-    const headers = this.getHeaders(method, new URL(url).pathname);
+    const headers = this.createHeaders(method, new URL(url).pathname);
 
     const data: AlimtalkMessageRequest = {
       plusFriendId,
