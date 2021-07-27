@@ -49,5 +49,6 @@ describe('SmsClient', () => {
         content,
       })
     ).resolves.not.toThrow();
+    expect(axiosPostSpy).toHaveBeenCalledTimes(1);
   });
 });

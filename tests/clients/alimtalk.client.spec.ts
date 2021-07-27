@@ -46,6 +46,7 @@ describe('AlimtalkClient', () => {
             statusText: 'Accepted',
           })
         );
+
       await expect(
         alimtalkClient.send({
           templateCode: 'abc',
@@ -57,6 +58,7 @@ describe('AlimtalkClient', () => {
           ],
         })
       ).resolves.not.toThrow();
+      expect(axiosPostSpy).toHaveBeenCalledTimes(1);
     });
 
     test('messages가 빈 배열이면 실패한다.', async () => {
