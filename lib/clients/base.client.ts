@@ -6,8 +6,13 @@ export abstract class BaseSensClient {
   protected baseUrl = 'https://sens.apigw.ntruss.com';
   protected abstract options: SensOptions;
 
-  private createTimestamp = (now?: Date): string =>
-    new Date(now).getTime().toString();
+  private createTimestamp = (now?: Date | string | number): string => {
+    if (now !== undefined) {
+      return new Date().getTime().toString();
+    } else {
+      return Date.now().toString();
+    }
+  };
 
   private createSignature(
     method: 'GET' | 'POST',
