@@ -1,6 +1,6 @@
 {
   "name": "@pickk/sens",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "NCP SENS client for nodejs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
