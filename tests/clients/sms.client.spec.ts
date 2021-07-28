@@ -5,10 +5,10 @@ jest.mock('axios');
 
 const to = '000';
 const content = 'test message';
+const accessKey = 'accessKey';
+const secretKey = 'secretKey';
 const callingNumber = 'callingnumber';
 const smsServiceId = 'smsServiceId';
-const smsSecretKey = 'smsSecretKey';
-const accessKey = 'accessKey';
 
 describe('SmsClient', () => {
   let smsClient: SmsClient;
@@ -18,8 +18,8 @@ describe('SmsClient', () => {
   beforeAll(() => {
     smsClient = new SmsClient({
       accessKey,
+      secretKey,
       smsServiceId,
-      smsSecretKey,
       callingNumber,
     });
   });
@@ -29,8 +29,8 @@ describe('SmsClient', () => {
       () =>
         new SmsClient({
           accessKey,
+          secretKey,
           smsServiceId,
-          smsSecretKey,
           callingNumber,
         })
     ).not.toThrow();

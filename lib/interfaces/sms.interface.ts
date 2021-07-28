@@ -4,9 +4,8 @@ export type SmsOptions = SensOptions & {
   /** 프로젝트 등록 시 발급받은 서비스 아이디 */
   smsServiceId: string;
 
-  /** Access Key Id와 맵핑되는 SecretKey
-   - secretKey를 대체합니다. */
-  smsSecretKey: string;
+  /** NCP 대시보드에서 발급받을 수 있으나 사용되지 않습니다. */
+  smsSecretKey?: string;
 
   /** 등록된 발신 번호 */
   callingNumber: string;

@@ -13,7 +13,6 @@ import { BaseSensClient } from './base.client';
 export class SmsClient extends BaseSensClient {
   constructor(protected readonly options: SmsOptions) {
     super();
-    options.secretKey = options.smsSecretKey;
 
     this.baseUrl += `/sms/v2/services/${options.smsServiceId}`;
   }
