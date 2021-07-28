@@ -11,9 +11,16 @@ yarn.lock
 yarn-error.log
 package-lock.json
 
+.editorconfig
 *eslint*
 *prettier*
 CHANGELOG.md
+
+.gitignore
+.npmignore
+.npmrc
+
+tsconfig.json
 
 .env*
 
