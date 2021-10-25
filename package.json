@@ -34,7 +34,7 @@
     "coverage": "jest --coverage"
   },
   "dependencies": {
-    "axios": "^0.23.0"
+    "axios": "^0.24.0"
   },
   "devDependencies": {
     "@types/axios": "0.14.0",
