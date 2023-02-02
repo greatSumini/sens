@@ -27,7 +27,8 @@ export type SmsMessage = {
   /** 수신번호 */
   to: string;
 
-  /** 메시지 컨텐츠 구분. (COMM: 일반메시지, AD: 광고메시지) */
+  /** 메시지 컨텐츠 구분. (COMM: 일반메시지, AD: 광고메시지)
+   - @default "COMM" */
   contentType: SmsMessageContentType;
 
   /** 국가번호 */
@@ -60,7 +61,8 @@ export type SmsMessage = {
 
 export type SmsMessageRequest = Pick<SmsMessage, 'from' | 'content'> &
   Partial<Pick<SmsMessage, 'countryCode' | 'contentType'>> & {
-    /** 메시지 구분 (SMS, LMS, MMS) */
+    /** 메시지 구분 (SMS, LMS, MMS)
+     - @default "SMS" */
     type: SmsMessageType;
 
     messages: Array<{
