@@ -116,9 +116,7 @@ export type SmsMessageRequestResponse = {
   message: SmsMessage;
 };
 
-export type SmsSendParams = Pick<
-  SmsMessageRequest,
-  'content' | 'countryCode' | 'type'| 'contentType'
-> & {
-  to: string | string[];
-};
+export type SmsSendParams = Pick<SmsMessageRequest, 'content' | 'countryCode'> &
+  Partial<Pick<SmsMessageRequest, 'type' | 'contentType'>> & {
+    to: string | string[];
+  };

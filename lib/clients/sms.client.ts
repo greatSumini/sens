@@ -2,7 +2,7 @@ import {
   SmsMessageRequest,
   SmsMessageRequestResponse,
   SmsOptions,
-  SmsSendParams
+  SmsSendParams,
 } from '../interfaces/';
 
 import { BaseSensClient } from './base.client';
