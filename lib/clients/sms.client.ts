@@ -1,3 +1,6 @@
+import axios from 'axios';
+import { URL } from 'url';
+
 import {
   SmsMessageRequest,
   SmsMessageRequestResponse,
@@ -6,8 +9,6 @@ import {
 } from '../interfaces/';
 
 import { BaseSensClient } from './base.client';
-import { URL } from 'url';
-import axios from 'axios';
 
 export class SmsClient extends BaseSensClient {
   constructor(protected readonly options: SmsOptions) {
