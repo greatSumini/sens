@@ -1,14 +1,13 @@
-import axios from 'axios';
-import { URL } from 'url';
-
 import {
   SmsMessageRequest,
   SmsMessageRequestResponse,
   SmsOptions,
-  SmsSendParams,
+  SmsSendParams
 } from '../interfaces/';
 
 import { BaseSensClient } from './base.client';
+import { URL } from 'url';
+import axios from 'axios';
 
 export class SmsClient extends BaseSensClient {
   constructor(protected readonly options: SmsOptions) {
@@ -20,6 +19,8 @@ export class SmsClient extends BaseSensClient {
   public async send({
     to,
     content,
+    type = 'SMS',
+    contentType = 'COMM',
     countryCode = '82',
   }: SmsSendParams): Promise<SmsMessageRequestResponse> {
     const { callingNumber: from } = this.options;
@@ -30,8 +31,8 @@ export class SmsClient extends BaseSensClient {
     const headers = this.createHeaders(method, new URL(url).pathname);
 
     const data: SmsMessageRequest = {
-      type: 'SMS',
-      contentType: 'COMM',
+      type,
+      contentType,
       countryCode,
       from,
       content,

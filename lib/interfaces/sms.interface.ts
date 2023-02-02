@@ -118,7 +118,7 @@ export type SmsMessageRequestResponse = {
 
 export type SmsSendParams = Pick<
   SmsMessageRequest,
-  'content' | 'countryCode'
+  'content' | 'countryCode' | 'type'| 'contentType'
 > & {
   to: string | string[];
 };
