@@ -20,6 +20,8 @@ export class SmsClient extends BaseSensClient {
   public async send({
     to,
     content,
+    type = 'SMS',
+    contentType = 'COMM',
     countryCode = '82',
   }: SmsSendParams): Promise<SmsMessageRequestResponse> {
     const { callingNumber: from } = this.options;
@@ -30,8 +32,8 @@ export class SmsClient extends BaseSensClient {
     const headers = this.createHeaders(method, new URL(url).pathname);
 
     const data: SmsMessageRequest = {
-      type: 'SMS',
-      contentType: 'COMM',
+      type,
+      contentType,
       countryCode,
       from,
       content,

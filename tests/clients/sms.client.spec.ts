@@ -1,4 +1,5 @@
 const axios = require('axios');
+
 import { SmsClient } from '../../lib';
 
 jest.mock('axios');
