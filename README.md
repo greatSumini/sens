@@ -36,7 +36,7 @@ NCP SENS의 개발 가이드는 [여기](https://guide.ncloud-docs.com/docs/ko/s
 
 ## Requirements
 
-- [nodejs](https://github.com/nodejs/node) >= 12
+- [nodejs](https://github.com/nodejs/node) >= 14
 
 ## Installation
 
